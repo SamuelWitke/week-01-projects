@@ -2,46 +2,127 @@
 <html>
 <head>
   <title>Cookie Store</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+	.banner {
+		height: 400px;
+		background-size: cover;	
+		background-image: url("img/milkbg.jpg");
+	    opacity: 0.9;
+		text-align: center;
+		font-size: large;
+		color: #19a0d0;
+	    position: relative;
+	}
+	#about-us{
+		background-color: #19a0d0;
+		color: #ffffff;
+	}
+	#contact-us {
+		background-color: FireBrick;
+		color: #ffffff;
+	}
+	.row {
+		padding-bottom: 30px;
+	}
+	.banner-text{
+		position: absolute;	
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+	    width: 450px;
+	    height: 200px; 
+	    background-color: rgba(0,0,0,0.5);
+	    opacity: 1;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+	}
+	.banner-text:hover{
+	    opacity: 1;      
+	}
+
+	.banner-text h1{
+	    color: white;
+	    display: inline-table;
+      	vertical-align:middle;	
+		font-size: 300%;
+	}
+</style>
 </head>
 <body>
-
-
-<h1>Cookie Store</h1>
-
-<p>Buy our awesome cookies. All proceeds go to charity!</p>
-
-<h2>The Cookies</h2>
-
-<h3>Thin Mint Cookies</h3>
-<p>Tasty mint chocolate cookies</p>
-<img src="img/mint.png">
-
-<h3>Peanut Butter Cookies</h3>
-<p>Yummy peanut buttery goodness!</p>
-<img src="img/peanut.png">
-
-<h3>Short Bread Cookies</h3>
-<p>Santa's favorite classic.</p>
-<img src="img/shortbread.png">
-
-<h3>Smore's Cookies</h3>
-<p>Camp fire favorite!</p>
-<img src="img/smores.png">
-
-<h2>About us</h2>
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
-<h2>Contact us</h2>
-<div>
-  100 Broadway Avenue,<br>
-  New York, NY 10001 <br>
-  (212) 555-1234
-</div>
-
+<div class="container">
+		<div class="row">
+			<div class="banner">
+				<div class="banner-text">
+					<div class="col-md-12">
+						<h1>Cookie Store</h1>
+					</div>
+					<div class="col">
+						<p>Buy our awesome cookies. All proceeds go to charity!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 text-center" id="products">
+				<h2>The Cookies</h2>
+			</div>
+			<div class="col-lg-12 col-md-3 text-center">
+			<div class="col-pull-3">
+				<h3>Thin Mint Cookies</h3>
+				<h4> <span class="label label-danger"> NEW </span> </h4>
+				<p>Tasty mint chocolate cookies</p>
+			</div>
+			<div class="col-lg-push-3">
+				<img src="img/mint.png" class="img-responsive img-circle center-block">
+				<p>Tasty mint chocolate cookies</p>
+			</div>
+			</div>
+			<div class="col-md-3 text-center">
+				<h3>Peanut Butter Cookies</h3>
+				<p>Yummy peanut buttery goodness!</p>
+				<img src="img/peanut.png" class="img-responsive img-circle  center-block">
+			</div>
+			<div class="col-md-3 text-center">
+				<h3>Short Bread Cookies</h3>
+				<p>Santa's favorite classic.</p>
+				<img src="img/shortbread.png" class="img-responsive img-circle  center-block">
+			</div>
+			<div class="col-md-3 text-center">
+				<h3>Smore's Cookies</h3>
+				<p>Camp fire favorite!</p>
+				<img src="img/smores.png" class="img-responsive img-circle  center-block">
+			</div>
+		</div>
+		<div class="row" id="about-us">
+			<div class="col-md-3 col-sm-3">
+				<img src="img/cmonster.png" class="img-responsive img-circle  left-block">
+			</div>
+			<div class="col-md-7 col-sm-7 text-center">
+			<h2>About us</h2>
+				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			</div>
+		</div>
+		<div class="row" id="contact-us">
+			<div class="col text-center" >
+				<h2>Contact us</h2>
+				<div>
+	 		 		100 Broadway Avenue,<br>
+		 			New York, NY 10001 <br>
+		 			(212) 555-1234
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
